@@ -1194,6 +1194,37 @@ background-size: cover; */
 /*--------------------------------------------------------------
 # Alt Services Section
 --------------------------------------------------------------*/
+.features_container {
+  display: grid;
+  grid-template-columns: 30% auto;
+  gap: 3rem;
+}
+
+@media (max-width: 600px) {
+  .features_container {
+    grid-template-columns: auto;
+  }
+  .features_container > ul {
+    max-height: 320px !important;
+  }
+}
+
+.features_container > ul {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll !important;
+  max-height: 520px;
+  padding-right: 10px;
+}
+
+.features_container > ul > li {
+  width: 100%;
+}
+
+.features_container > ul > li > a {
+  width: 100%;
+}
+
 .alt-services .features-image {
   position: relative;
   min-height: 300px;
